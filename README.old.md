@@ -1,2 +1,0 @@
-# myfirstapp
-flights
