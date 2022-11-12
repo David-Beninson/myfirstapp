@@ -1,7 +1,7 @@
 {
   "name": "flights",
   "version": "0.1.0",
-  "homepage " : "http://David-Beninson/github.io/myfirstapp",
+  "homepage " : "http://David-Beninson.github.io/myfirstapp",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
