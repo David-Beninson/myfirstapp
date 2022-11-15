@@ -4,12 +4,14 @@ const bodyparser = require("body-parser");
 const db = require("mongoose");
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json());
+require("dotenv").config();
 
-db.connect("mongodb://localhost:27017/flightlist", () => {
+
+db.connect(process.env.FLIGHT_API_KEY, () => {
   console.log("bd conected");
 });
 
-app.use(express.static("/Users/davidbeninson/Desktop/Desktop/flights/myfirstapp/reactapp/build"));
+app.use(express.static(process.env.STATIC_API_KEY));
 
 const flightSchema = db.Schema({
   id:String,
