@@ -5,7 +5,6 @@ const db = require("mongoose");
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json());
 require("dotenv").config();
-const http = require("http")
 
 
 db.connect(process.env.FLIGHT_API_KEY, () => {
